@@ -9,6 +9,7 @@ import { ReactQueryA } from './components/ReactQueryA'
 import { ReactQueryB } from './components/ReactQueryB'
 import { ClassicalFetchA } from './components/ClassicalFetchA'
 import { ClassicalFetchB } from './components/ClassicalFetchB'
+import { MainContext } from './components/MainContext'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -37,6 +38,9 @@ const App: VFC = () => {
               </Route>
               <Route exact path="/fetch-b">
                 <ClassicalFetchB />
+              </Route>
+              <Route exact path="/main-context">
+                <MainContext />
               </Route>
             </Switch>
           </Layout>
